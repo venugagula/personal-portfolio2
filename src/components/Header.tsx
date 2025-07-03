@@ -9,6 +9,18 @@ const Header = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center text-white px-6">
+        {/* Profile Image */}
+        <div className="mb-8">
+          <div className="relative inline-block">
+            <div className="absolute inset-0 bg-primary rounded-full blur-xl opacity-30 scale-110" />
+            <img 
+              src="/lovable-uploads/529fda67-26f7-441b-a699-150eb3c76555.png"
+              alt="Venugopal Reddy Gangula"
+              className="relative w-32 h-32 lg:w-40 lg:h-40 rounded-full object-cover border-4 border-white/50 shadow-2xl mx-auto"
+            />
+          </div>
+        </div>
+
         <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
           I am <span className="text-primary">Venugopal Reddy</span>
           <br />
