@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Linkedin, Download } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-hidden" style={{backgroundImage: "url('/lovable-uploads/b45fcac7-79a5-4a0d-9980-5e1f5363ca38.png')"}}>
+    <header className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-hidden" style={{backgroundImage: "url('./lovable-uploads/b45fcac7-79a5-4a0d-9980-5e1f5363ca38.png')"}}>
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/40" />
       
@@ -14,7 +14,7 @@ const Header = () => {
           <div className="relative inline-block">
             <div className="absolute inset-0 bg-primary rounded-full blur-xl opacity-30 scale-110" />
             <img 
-              src="/lovable-uploads/529fda67-26f7-441b-a699-150eb3c76555.png"
+              src="./lovable-uploads/529fda67-26f7-441b-a699-150eb3c76555.png"
               alt="Venugopal Reddy Gangula"
               className="relative w-32 h-32 lg:w-40 lg:h-40 rounded-full object-cover border-4 border-white/50 shadow-2xl mx-auto"
             />
