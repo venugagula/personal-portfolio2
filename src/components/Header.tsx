@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Linkedin, Download } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-hidden" style={{backgroundImage: "url('/lovable-uploads/b45fcac7-79a5-4a0d-9980-5e1f5363ca38.png')"}}>
+    <header className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat overflow-hidden" style={{backgroundImage: "url('./lovable-uploads/b45fcac7-79a5-4a0d-9980-5e1f5363ca38.png')"}}>
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/40" />
       
