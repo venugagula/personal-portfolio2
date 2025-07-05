@@ -6,12 +6,9 @@
     <title>Redirecting...</title>
     <script>
       // GitHub Pages SPA redirect
-      const path = window.location.pathname.slice(1);
-      if (path) {
-        window.location.replace(`${window.location.origin}/personal-portfolio2/?/${path}`);
-      } else {
-        window.location.replace(`${window.location.origin}/personal-portfolio2/`);
-      }
+      const redirect = window.location.pathname.replace(/^\/personal-portfolio2/, '');
+      sessionStorage.redirect = window.location.origin + '/personal-portfolio2' + redirect;
+      window.location.replace(`${window.location.origin}/personal-portfolio2/`);
     </script>
   </head>
   <body>
