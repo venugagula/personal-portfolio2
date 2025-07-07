@@ -48,22 +48,22 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-12 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">
+        <div className="mb-8">
+          <h2 className="text-3xl font-bold text-left mb-4">
             Featured <span className="bg-text-gradient bg-clip-text text-transparent">Projects</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base text-muted-foreground max-w-2xl text-left">
             Real-world implementations delivering measurable business impact
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {projects.map((project, index) => (
-            <Card key={index} className="border-0 shadow-card hover:shadow-card-hover transition-all duration-300 group">
+            <Card key={index} className="border-0 shadow-card hover:shadow-card-hover transition-all duration-300 group rounded-lg">
               {/* Project Image */}
-              <div className="relative h-48 overflow-hidden rounded-t-lg">
+              <div className="relative h-40 overflow-hidden rounded-t-lg">
                 <img 
                   src={project.image} 
                   alt={`${project.title} Architecture`}
@@ -78,10 +78,10 @@ const Projects = () => {
                 </div>
               </div>
 
-              <CardHeader className="pb-4">
+              <CardHeader className="pb-3">
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex-1">
-                    <CardTitle className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                    <CardTitle className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                       {project.title}
                     </CardTitle>
                     <div className="flex items-center gap-2 text-muted-foreground text-sm mb-3">
@@ -91,50 +91,50 @@ const Projects = () => {
                   </div>
                 </div>
                 
-                <p className="text-muted-foreground mb-4">
+                <p className="text-muted-foreground mb-3 text-sm leading-relaxed">
                   {project.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-1.5 mb-3">
                   {project.technologies.map((tech, i) => (
-                    <Badge key={i} variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">
+                    <Badge key={i} variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20 text-xs">
                       {tech}
                     </Badge>
                   ))}
                 </div>
               </CardHeader>
               
-              <CardContent>
+              <CardContent className="pt-0">
                 {/* Visual Image */}
-                <div className="mb-6">
+                <div className="mb-4">
                   <img 
                     src={project.visualImage} 
                     alt={`${project.title} Dashboard`}
-                    className="w-full h-32 object-cover rounded-lg border border-border/50"
+                    className="w-full h-24 object-cover rounded-lg border border-border/50"
                   />
                 </div>
 
-                <div className="space-y-3 mb-6">
-                  <h4 className="font-semibold text-foreground flex items-center gap-2">
+                <div className="space-y-2 mb-4">
+                  <h4 className="font-semibold text-foreground flex items-center gap-2 text-sm">
                     <GitBranch className="w-4 h-4" />
                     Key Achievements
                   </h4>
-                  <ul className="space-y-2">
-                    {project.achievements.map((achievement, i) => (
-                      <li key={i} className="flex items-start gap-3 text-sm">
-                        <div className="w-1.5 h-1.5 bg-primary-gradient rounded-full mt-2 flex-shrink-0" />
+                  <ul className="space-y-1">
+                    {project.achievements.slice(0, 2).map((achievement, i) => (
+                      <li key={i} className="flex items-start gap-2 text-xs">
+                        <div className="w-1 h-1 bg-primary-gradient rounded-full mt-1.5 flex-shrink-0" />
                         <span className="text-muted-foreground leading-relaxed">{achievement}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <div className="border-t border-border/50 pt-4 mb-6">
-                  <h4 className="font-semibold text-foreground mb-3">Key Metrics</h4>
-                  <div className="grid grid-cols-1 gap-2">
-                    {project.metrics.map((metric, i) => (
-                      <div key={i} className="flex items-center gap-2 text-sm">
-                        <div className="w-2 h-2 bg-accent rounded-full" />
+                <div className="border-t border-border/50 pt-3 mb-4">
+                  <h4 className="font-semibold text-foreground mb-2 text-sm">Key Metrics</h4>
+                  <div className="grid grid-cols-1 gap-1">
+                    {project.metrics.slice(0, 2).map((metric, i) => (
+                      <div key={i} className="flex items-center gap-2 text-xs">
+                        <div className="w-1.5 h-1.5 bg-accent rounded-full" />
                         <span className="text-muted-foreground">{metric}</span>
                       </div>
                     ))}
