@@ -16,13 +16,14 @@ const Header = () => {
         </h1>
         
         <div className="text-2xl lg:text-3xl mb-8 font-light">
-          Data Engineer|
+          Data Engineer | ETL Specialist | Cloud Architect
         </div>
         
-        <div className="max-w-2xl mx-auto text-lg mb-12 leading-relaxed opacity-90">
-          Highly skilled Data Engineer with 4+ years of experience designing and implementing 
-          high-performance data solutions. Specialized in building scalable ETL pipelines, 
-          real-time data processing systems, and cloud-based data platforms.
+        <div className="max-w-3xl mx-auto text-lg mb-12 leading-relaxed opacity-90">
+          Data Engineer with 4+ years of experience building scalable ETL pipelines, real-time analytics, 
+          and HIPAA-compliant systems using AWS, Azure, and Databricks. Specialized in processing 50K+ 
+          daily records, reducing operational costs, and delivering data observability solutions with 
+          CI/CD best practices.
         </div>
 
         {/* Contact Info Cards */}
@@ -84,7 +85,7 @@ const Header = () => {
             onClick={() => window.open('https://github.com/venugagula/myresume', '_blank')}
           >
             <Download className="w-5 h-5 mr-2" />
-            Download Resume
+            Download My Resume
           </Button>
         </div>
       </div>

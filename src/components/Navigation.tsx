@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, User, Briefcase, Code, Mail } from "lucide-react";
+import { Menu, X, User, Briefcase, Code, Mail, Wrench, Award } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,8 +8,10 @@ const Navigation = () => {
   const navItems = [
     { label: "About", href: "#about", icon: User },
     { label: "Skills", href: "#skills", icon: Code },
+    { label: "Tech Stack", href: "#tech-stack", icon: Wrench },
     { label: "Experience", href: "#experience", icon: Briefcase },
     { label: "Projects", href: "#projects", icon: Code },
+    { label: "Certifications", href: "#certifications", icon: Award },
     { label: "Contact", href: "#contact", icon: Mail },
   ];
 
