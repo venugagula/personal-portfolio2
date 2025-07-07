@@ -23,7 +23,12 @@ const Footer = () => {
                 </div>
                 <div>
                   <div className="font-medium">Email</div>
-                  <div className="text-sm text-muted-foreground">venugangula44@gmail.com</div>
+                  <a 
+                    href="mailto:venugangula44@gmail.com" 
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+                  >
+                    venugangula44@gmail.com
+                  </a>
                 </div>
               </div>
               
@@ -33,7 +38,12 @@ const Footer = () => {
                 </div>
                 <div>
                   <div className="font-medium">Phone</div>
-                  <div className="text-sm text-muted-foreground">872-258-6626</div>
+                  <a 
+                    href="tel:+18722586626" 
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+                  >
+                    872-258-6626
+                  </a>
                 </div>
               </div>
               
@@ -58,12 +68,19 @@ const Footer = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-end">
-                <Button className="bg-primary-gradient hover:opacity-90 transition-opacity">
+                <Button 
+                  className="bg-primary-gradient hover:opacity-90 transition-opacity"
+                  onClick={() => window.open('mailto:venugangula44@gmail.com', '_blank')}
+                >
                   <Mail className="w-4 h-4 mr-2" />
                   Send Message
                 </Button>
                 
-                <Button variant="outline" className="border-primary/20 hover:border-primary/40">
+                <Button 
+                  variant="outline" 
+                  className="border-primary/20 hover:border-primary/40"
+                  onClick={() => window.open('https://www.linkedin.com/in/venugopal-reddy-gangula-3a69b222b/', '_blank')}
+                >
                   <Linkedin className="w-4 h-4 mr-2" />
                   LinkedIn
                 </Button>

@@ -16,7 +16,8 @@ const projects = [
       "Ensured compliance: Integrated Great Expectations validation checks, reducing data quality issues by 35%."
     ],
     impact: "28% reduction in preventable readmissions",
-    metrics: ["83% model accuracy", "50K+ daily records processed", "10+ hours saved weekly"]
+    metrics: ["83% model accuracy", "50K+ daily records processed", "10+ hours saved weekly"],
+    link: "https://github.com/venugagula/Patient-Readmission-Prediction-Pipeline"
   },
   {
     title: "ETL Pipeline for E-Commerce on Azure",
@@ -30,7 +31,8 @@ const projects = [
       "Built custom Delta Lake merge operations that improved upsert performance by 40% for frequently updated product inventory data."
     ],
     impact: "25% reduction in processing time",
-    metrics: ["15GB+ daily data processed", "40% upsert performance improvement", "Near real-time analytics"]
+    metrics: ["15GB+ daily data processed", "40% upsert performance improvement", "Near real-time analytics"],
+    link: "https://github.com/venugagula/azure-ecommerce-etl-pipeline"
   }
 ];
 
@@ -111,7 +113,11 @@ const Projects = () => {
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-border/50">
-                  <Button variant="outline" className="w-full group border-primary/20 hover:border-primary/40 hover:bg-primary/5">
+                  <Button 
+                    variant="outline" 
+                    className="w-full group border-primary/20 hover:border-primary/40 hover:bg-primary/5"
+                    onClick={() => window.open(project.link, '_blank')}
+                  >
                     View Project Details
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
@@ -122,7 +128,10 @@ const Projects = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button className="bg-primary-gradient hover:opacity-90 transition-opacity">
+          <Button 
+            className="bg-primary-gradient hover:opacity-90 transition-opacity"
+            onClick={() => window.open('https://github.com/venugagula', '_blank')}
+          >
             <GitBranch className="w-4 h-4 mr-2" />
             View All Projects
           </Button>
