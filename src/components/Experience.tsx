@@ -47,56 +47,56 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section className="py-12 bg-background">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-left mb-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold mb-4">
             Professional <span className="bg-text-gradient bg-clip-text text-transparent">Experience</span>
           </h2>
-          <p className="text-base text-muted-foreground max-w-2xl text-left">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Proven track record of delivering high-impact data solutions across healthcare, finance, and technology sectors
           </p>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <Card key={index} className="border-0 shadow-card hover:shadow-card-hover transition-all duration-300 rounded-lg">
-              <CardHeader className="pb-3">
+            <Card key={index} className="border-0 shadow-card hover:shadow-card-hover transition-all duration-300">
+              <CardHeader className="pb-4">
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
                   <div>
-                    <CardTitle className="text-xl font-bold text-foreground mb-2">
+                    <CardTitle className="text-2xl font-bold text-foreground mb-2">
                       {exp.role}
                     </CardTitle>
-                    <div className="flex items-center gap-2 text-primary font-semibold text-base">
-                      <Building className="w-4 h-4" />
+                    <div className="flex items-center gap-2 text-primary font-semibold text-lg">
+                      <Building className="w-5 h-5" />
                       {exp.company}
                     </div>
                   </div>
-                  <div className="flex flex-col lg:text-right gap-1">
-                    <div className="flex items-center gap-2 text-muted-foreground text-sm">
+                  <div className="flex flex-col lg:text-right gap-2">
+                    <div className="flex items-center gap-2 text-muted-foreground">
                       <Calendar className="w-4 h-4" />
                       {exp.period}
                     </div>
-                    <div className="text-xs text-muted-foreground">
+                    <div className="text-sm text-muted-foreground">
                       {exp.location}
                     </div>
                   </div>
                 </div>
               </CardHeader>
               
-              <CardContent className="pt-0">
-                <ul className="space-y-2 mb-4">
-                  {exp.achievements.slice(0, 3).map((achievement, i) => (
-                    <li key={i} className="flex items-start gap-2">
-                      <div className="w-1.5 h-1.5 bg-primary-gradient rounded-full mt-1.5 flex-shrink-0" />
-                      <span className="text-muted-foreground leading-relaxed text-sm">{achievement}</span>
+              <CardContent>
+                <ul className="space-y-3 mb-6">
+                  {exp.achievements.map((achievement, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-primary-gradient rounded-full mt-2 flex-shrink-0" />
+                      <span className="text-muted-foreground leading-relaxed">{achievement}</span>
                     </li>
                   ))}
                 </ul>
                 
-                <div className="flex flex-wrap gap-1.5">
+                <div className="flex flex-wrap gap-2">
                   {exp.technologies.map((tech, i) => (
-                    <Badge key={i} variant="secondary" className="bg-secondary/50 hover:bg-secondary text-xs">
+                    <Badge key={i} variant="secondary" className="bg-secondary/50 hover:bg-secondary">
                       {tech}
                     </Badge>
                   ))}

@@ -4,24 +4,25 @@ import { Mail, Phone, Linkedin, MapPin } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="bg-card border-t border-border/50">
-      <div className="container mx-auto px-6 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div className="container mx-auto px-6 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">
+            <h3 className="text-2xl font-bold mb-6">
               Let's <span className="bg-text-gradient bg-clip-text text-transparent">Connect</span>
             </h3>
-            <p className="text-muted-foreground mb-6 max-w-md text-sm">
-              Ready to discuss data engineering opportunities and build amazing solutions together.
+            <p className="text-muted-foreground mb-8 max-w-md">
+              Ready to discuss how my data engineering expertise can drive your organization's success. 
+              Let's build something amazing together.
             </p>
             
-            <div className="space-y-3">
+            <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <div className="p-2 rounded-lg bg-primary/10">
                   <Mail className="w-4 h-4 text-primary" />
                 </div>
                 <div>
-                  <div className="font-medium text-sm">Email</div>
+                  <div className="font-medium">Email</div>
                   <a 
                     href="mailto:venugangula44@gmail.com" 
                     className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer"
@@ -36,7 +37,7 @@ const Footer = () => {
                   <Phone className="w-4 h-4 text-primary" />
                 </div>
                 <div>
-                  <div className="font-medium text-sm">Phone</div>
+                  <div className="font-medium">Phone</div>
                   <a 
                     href="tel:+18722586626" 
                     className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer"
@@ -51,7 +52,7 @@ const Footer = () => {
                   <MapPin className="w-4 h-4 text-primary" />
                 </div>
                 <div>
-                  <div className="font-medium text-sm">Location</div>
+                  <div className="font-medium">Location</div>
                   <div className="text-sm text-muted-foreground">Chicago, Illinois 60616</div>
                 </div>
               </div>
@@ -60,10 +61,10 @@ const Footer = () => {
 
           {/* CTA Section */}
           <div className="text-center lg:text-right">
-            <div className="inline-block p-6 rounded-2xl bg-hero-gradient border border-border/50">
-              <h4 className="text-lg font-bold mb-3">Ready to Start?</h4>
-              <p className="text-muted-foreground mb-4 max-w-sm text-sm">
-                Available for opportunities and consulting projects.
+            <div className="inline-block p-8 rounded-2xl bg-hero-gradient border border-border/50">
+              <h4 className="text-xl font-bold mb-4">Ready to Start?</h4>
+              <p className="text-muted-foreground mb-6 max-w-sm">
+                Available for full-time opportunities and consulting projects.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-end">
@@ -89,8 +90,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-border/50 mt-8 pt-6 text-center">
-          <p className="text-xs text-muted-foreground">
+        <div className="border-t border-border/50 mt-12 pt-8 text-center">
+          <p className="text-sm text-muted-foreground">
             © 2024 Venugopal Reddy Gangula. Built with React, TypeScript, and Tailwind CSS.
           </p>
         </div>
