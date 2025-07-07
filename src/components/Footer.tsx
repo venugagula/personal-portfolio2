@@ -4,7 +4,7 @@ import { Mail, Phone, Linkedin, MapPin } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="bg-card border-t border-border/50">
-      <div className="container mx-auto px-6 py-8">
+      <div className="container mx-auto px-6 py-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Contact Info */}
           <div>

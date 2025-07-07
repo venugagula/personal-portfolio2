@@ -13,7 +13,7 @@ const Index = () => {
       <Navigation />
       
       {/* Add padding to account for fixed navigation */}
-      <div className="pt-12">
+      <div className="pt-10">
         <section id="about">
           <Header />
         </section>

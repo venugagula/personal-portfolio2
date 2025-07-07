@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Linkedin, Download } from "lucide-react";
 
 const Header = () => {
   return (
-    <section className="relative py-16 bg-hero-gradient border-b border-border/50">
+    <section className="relative py-8 bg-hero-gradient border-b border-border/50">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
