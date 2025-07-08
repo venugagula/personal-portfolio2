@@ -91,19 +91,19 @@ const coursework = [
 
 const Skills = () => {
   return (
-    <section className="py-20">
+    <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">
-            Technical <span className="bg-text-gradient bg-clip-text text-transparent">Skills</span>
+          <h2 className="text-4xl font-bold mb-4">
+            Technical <span className="bg-text-gradient bg-clip-text text-transparent">Expertise</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive expertise across the data engineering stack
+            Comprehensive skill set spanning the entire data engineering lifecycle
           </p>
         </div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {skillCategories.map((category, index) => (
             <Card key={index} className="border-0 shadow-card hover:shadow-card-hover transition-all duration-300 group">
               <CardHeader className="pb-4">
@@ -132,24 +132,24 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Education */}
+        {/* Education & Coursework */}
         <Card className="border-0 shadow-card">
           <CardHeader>
             <div className="flex items-center gap-3 mb-4">
               <div className="p-2 rounded-lg bg-accent text-accent-foreground">
                 <Settings className="w-5 h-5" />
               </div>
-              <CardTitle className="text-xl font-bold">Education</CardTitle>
+              <CardTitle className="text-2xl font-bold">Education & Relevant Coursework</CardTitle>
             </div>
             <div className="space-y-2">
-              <h3 className="text-lg font-semibold text-primary">Master's in Computer/Information Technology</h3>
-              <p className="text-muted-foreground">Lindsey Wilson College • 2023 – 2025</p>
+              <h3 className="text-lg font-semibold text-primary">Master's in Computer/Information Technology Administration and Management</h3>
+              <p className="text-muted-foreground">Lindsey Wilson College • Aug. 2023 – May 2025 • Columbia, Kentucky</p>
             </div>
           </CardHeader>
           
           <CardContent>
             <div className="flex flex-wrap gap-2">
-              {coursework.slice(0, 6).map((course, i) => (
+              {coursework.map((course, i) => (
                 <Badge 
                   key={i} 
                   variant="outline" 

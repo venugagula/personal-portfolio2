@@ -1,39 +1,47 @@
 import Navigation from "@/components/Navigation";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Projects from "@/components/Projects";
+import Header from "@/components/Header";
+import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
-import Contact from "@/components/Contact";
+import TechStack from "@/components/TechStack";
+import Projects from "@/components/Projects";
+import Certifications from "@/components/Certifications";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background font-poppins">
+    <div className="min-h-screen bg-background">
       <Navigation />
       
-      <main>
-        <section id="home">
-          <Hero />
+      {/* Add padding to account for fixed navigation */}
+      <div className="pt-16">
+        <section id="about">
+          <Header />
         </section>
         
-        <section id="about" className="bg-muted/30">
-          <About />
-        </section>
-        
-        <section id="projects" className="bg-background">
-          <Projects />
-        </section>
-        
-        <section id="skills" className="bg-muted/30">
+        <section id="skills">
           <Skills />
         </section>
         
-        <section id="contact" className="bg-background">
-          <Contact />
+        <section id="tech-stack">
+          <TechStack />
         </section>
-      </main>
-      
-      <Footer />
+        
+        <section id="experience">
+          <Experience />
+        </section>
+        
+        <section id="projects">
+          <Projects />
+        </section>
+        
+        <section id="certifications">
+          <Certifications />
+        </section>
+        
+        <section id="contact">
+          <Footer />
+        </section>
+      </div>
     </div>
   );
 };

@@ -48,10 +48,10 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="py-20">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-4xl font-bold mb-4">
             Featured <span className="bg-text-gradient bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -61,7 +61,7 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="border-0 shadow-card hover:shadow-card-hover transition-all duration-300 group rounded-lg overflow-hidden">
+            <Card key={index} className="border-0 shadow-card hover:shadow-card-hover transition-all duration-300 group">
               {/* Project Image */}
               <div className="relative h-48 overflow-hidden rounded-t-lg">
                 <img 
@@ -117,13 +117,13 @@ const Projects = () => {
                 <div className="space-y-3 mb-6">
                   <h4 className="font-semibold text-foreground flex items-center gap-2">
                     <GitBranch className="w-4 h-4" />
-                    Key Impact
+                    Key Achievements
                   </h4>
                   <ul className="space-y-2">
-                    {project.achievements.slice(0, 3).map((achievement, i) => (
+                    {project.achievements.map((achievement, i) => (
                       <li key={i} className="flex items-start gap-3 text-sm">
                         <div className="w-1.5 h-1.5 bg-primary-gradient rounded-full mt-2 flex-shrink-0" />
-                        <span className="text-muted-foreground leading-relaxed line-clamp-2">{achievement}</span>
+                        <span className="text-muted-foreground leading-relaxed">{achievement}</span>
                       </li>
                     ))}
                   </ul>

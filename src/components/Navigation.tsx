@@ -1,15 +1,17 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, User, Code, Mail, Wrench, Download } from "lucide-react";
+import { Menu, X, User, Briefcase, Code, Mail, Wrench, Award } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: "Home", href: "#home", icon: User },
     { label: "About", href: "#about", icon: User },
+    { label: "Skills", href: "#skills", icon: Code },
+    { label: "Tech Stack", href: "#tech-stack", icon: Wrench },
+    { label: "Experience", href: "#experience", icon: Briefcase },
     { label: "Projects", href: "#projects", icon: Code },
-    { label: "Skills", href: "#skills", icon: Wrench },
+    { label: "Certifications", href: "#certifications", icon: Award },
     { label: "Contact", href: "#contact", icon: Mail },
   ];
 
@@ -20,12 +22,12 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-b border-border/20 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-lg border-b border-white/10">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="font-bold text-xl">
-            <span className="bg-text-gradient bg-clip-text text-transparent">VRG</span>
+            <span className="text-white">Portfolio</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -34,7 +36,7 @@ const Navigation = () => {
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
-                className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors font-medium"
+                className="flex items-center gap-2 text-white/80 hover:text-white transition-colors"
               >
                 <item.icon className="w-4 h-4" />
                 {item.label}
@@ -45,11 +47,10 @@ const Navigation = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button 
-              onClick={() => window.open('https://github.com/venugagula/myresume', '_blank')}
-              className="bg-primary-gradient hover:opacity-90 transition-opacity text-white font-medium"
+              onClick={() => scrollToSection("#contact")}
+              className="bg-primary hover:bg-primary/90 text-white"
             >
-              <Download className="w-4 h-4 mr-2" />
-              Resume
+              Contact
             </Button>
           </div>
 
@@ -72,7 +73,7 @@ const Navigation = () => {
                 <button
                   key={item.label}
                   onClick={() => scrollToSection(item.href)}
-                  className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors py-2"
+                  className="flex items-center gap-3 text-white/80 hover:text-white transition-colors py-2"
                 >
                   <item.icon className="w-4 h-4" />
                   {item.label}
