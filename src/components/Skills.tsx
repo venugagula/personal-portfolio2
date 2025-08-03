@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code, Database, Cloud, BarChart, Shield, Settings } from "lucide-react";
@@ -11,7 +12,7 @@ const skillCategories = [
       "PySpark",
       "SQL (PostgreSQL)",
       "R, VBA, SAS",
-      "Bash, Python, Lambda"
+      "AWS Lambda"
     ]
   },
   {
@@ -26,12 +27,11 @@ const skillCategories = [
       "CI/CD",
       "MongoDB",
       "Airflow",
-      "Hadoop",
-      "AWS Glue"
+      "Hadoop"
     ]
   },
   {
-    title: "Cloud",
+    title: "Cloud Platforms",
     icon: Cloud,
     skills: [
       "Snowflake",
@@ -41,7 +41,7 @@ const skillCategories = [
       "ADLS Gen 2",
       "Synapse",
       "AWS S3",
-      "EMR,EC2",
+      "EMR, EC2",
       "RDS",
       "BigQuery"
     ]
@@ -61,26 +61,16 @@ const skillCategories = [
     icon: BarChart,
     skills: [
       "Power BI",
-      "Tableau",
+      "Tableau", 
       "Looker",
       "Excel (Pivot Tables, Power Query)"
-    ]
-  },
-  {
-    title: "Data Governance",
-    icon: Shield,
-    skills: [
-      "Great Expectations",
-      "Unity Catalog",
-      "HIPAA Compliance",
-      "FHIR/HL7 Standards"
     ]
   }
 ];
 
 const coursework = [
   "Data Structures",
-  "Applied Statistics",
+  "Applied Statistics", 
   "Database Management",
   "Artificial Intelligence",
   "Python",
@@ -95,7 +85,7 @@ const Skills = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
-            Technical <span className="bg-text-gradient bg-clip-text text-transparent">Expertise</span>
+            Technical <span className="bg-text-gradient bg-clip-text text-transparent">Skills</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Comprehensive skill set spanning the entire data engineering lifecycle

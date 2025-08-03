@@ -1,5 +1,6 @@
+
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, Linkedin, MapPin } from "lucide-react";
+import { Mail, Phone, Linkedin, MapPin, Github } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -56,6 +57,23 @@ const Footer = () => {
                   <div className="text-sm text-muted-foreground">Chicago, Illinois 60616</div>
                 </div>
               </div>
+
+              <div className="flex items-center gap-3">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <Github className="w-4 h-4 text-primary" />
+                </div>
+                <div>
+                  <div className="font-medium">GitHub</div>
+                  <a 
+                    href="https://github.com/venugagula" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+                  >
+                    github.com/venugagula
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -79,10 +97,19 @@ const Footer = () => {
                 <Button 
                   variant="outline" 
                   className="border-primary/20 hover:border-primary/40"
-                  onClick={() => window.open('https://www.linkedin.com/in/venugopal-reddy-gangula-3a69b222b/', '_blank')}
+                  onClick={() => window.open('https://www.linkedin.com/in/venugopalreddygangula/', '_blank')}
                 >
                   <Linkedin className="w-4 h-4 mr-2" />
                   LinkedIn
+                </Button>
+
+                <Button 
+                  variant="outline" 
+                  className="border-primary/20 hover:border-primary/40"
+                  onClick={() => window.open('https://github.com/venugagula', '_blank')}
+                >
+                  <Github className="w-4 h-4 mr-2" />
+                  GitHub
                 </Button>
               </div>
             </div>

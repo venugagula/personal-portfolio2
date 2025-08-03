@@ -1,7 +1,8 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Calendar, GitBranch, TrendingUp, ArrowRight, Github, ExternalLink } from "lucide-react";
+import { Calendar, GitBranch, TrendingUp, Github, ExternalLink } from "lucide-react";
 import patientArchitecture from "@/assets/patient-pipeline-architecture.jpg";
 import azureArchitecture from "@/assets/azure-etl-architecture.jpg";
 import dataMetrics from "@/assets/data-metrics-visual.jpg";
@@ -9,33 +10,31 @@ import powerbiDashboard from "@/assets/powerbi-dashboard.jpg";
 
 const projects = [
   {
-    title: "Patient Readmission Prediction Pipeline",
+    title: "Real-Time Twitter Analysis Pipeline",
     period: "Dec 2024",
-    technologies: ["Python", "PySpark", "AWS Glue", "FHIR", "HL7"],
-    description: "End-to-end predictive analytics pipeline processing 50K+ daily FHIR EHR records, reducing preventable readmissions by 28% in major hospitals with HIPAA compliance.",
+    technologies: ["Kafka", "Spark Structured Streaming", "MongoDB", "Power BI"],
+    description: "Built a Kafka-Spark pipeline streaming 10K+ tweets/hour with 85% sentiment accuracy.",
     achievements: [
-      "Developed end-to-end predictive analytics pipeline processing 50K+ daily FHIR EHR records, reducing preventable readmissions by 28% in major hospitals.",
-      "Engineered features from unstructured clinical notes using Python/PySpark, improving model accuracy to 83% with Logistic Regression + SMOTE for class imbalance.",
-      "Automated reporting with AWS Glue jobs generating daily risk scorecards (S3 → Power BI), saving 10+ hours/week for care teams.",
-      "Ensured HIPAA compliance with Great Expectations validation checks, reducing data quality issues by 35%."
+      "Built a Kafka-Spark pipeline streaming 10K+ tweets/hour with 85% sentiment accuracy.",
+      "Performed sentiment classification using TextBlob, enabling near real-time public opinion tracking.",
+      "Stored processed data in MongoDB and built interactive Power BI dashboards to visualize sentiment by topic, hashtag and geography, supporting social media intelligence use cases."
     ],
-    impact: "28% reduction in preventable readmissions",
-    metrics: ["83% model accuracy", "50K+ daily records processed", "10+ hours saved weekly"],
-    link: "https://github.com/venugagula/Patient-Readmission-Prediction-Pipeline",
-    githubLink: "https://github.com/venugagula/Patient-Readmission-Prediction-Pipeline",
+    impact: "85% sentiment accuracy",
+    metrics: ["10K+ tweets/hour processed", "85% sentiment accuracy", "Near real-time analytics"],
+    link: "https://github.com/venugagula/Real-Time-Twitter-Analysis-Pipeline",
+    githubLink: "https://github.com/venugagula/Real-Time-Twitter-Analysis-Pipeline",
     image: patientArchitecture,
     visualImage: powerbiDashboard
   },
   {
     title: "ETL Pipeline for E-Commerce on Azure",
     period: "Nov 2022", 
-    technologies: ["Azure Data Factory", "Databricks", "Delta Lake", "PySpark", "CI/CD"],
-    description: "Cloud-based data pipeline on Azure processing 15GB+ of daily e-commerce data, reducing processing time by 25% through Spark optimizations and cloud cost optimization.",
+    technologies: ["Azure Data Factory", "Databricks", "Delta Lake", "PySpark"],
+    description: "Processed 15GB+/day using Spark and ADF; cut runtime by 25% and spot upserts by 40%.",
     achievements: [
-      "Designed and deployed cloud-based data pipeline on Azure processing 15GB+ daily e-commerce data, reducing processing time by 25% through Spark optimizations (partition pruning, caching).",
-      "Implemented medallion architecture in Azure Data Lake (Bronze→Silver→Gold) using Delta Lake for ACID compliance, enabling reliable near-real-time analytics.",
-      "Orchestrated workflows with Azure Data Factory, automating data ingestion from multiple sources with CI/CD pipelines for data observability.",
-      "Built custom Delta Lake merge operations improving upsert performance by 40% for frequently updated product inventory data."
+      "Processed 15GB+/day using Spark and ADF; cut runtime by 25% and spot upserts by 40%.",
+      "Implemented medallion architecture in Azure Data Lake (Bronze→Silver→Gold) using Delta Lake for ACID compliance, enabling reliable near real-time analytics.",
+      "Processed 15GB+/day; reduced runtime by 25% via Spark optimizations and ADF-orchestrated ingestion. Improved upsert performance by 40% with custom Delta Lake merge logic."
     ],
     impact: "25% reduction in processing time",
     metrics: ["15GB+ daily data processed", "40% upsert performance improvement", "Near real-time analytics"],
@@ -147,7 +146,7 @@ const Projects = () => {
                     onClick={() => window.open(project.githubLink, '_blank')}
                   >
                     <Github className="w-4 h-4 mr-2" />
-                    View Code on GitHub
+                    View Code
                   </Button>
                   
                   <Button 
