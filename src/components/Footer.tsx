@@ -24,7 +24,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <div className="font-medium">Email</div>
-                  <a 
+                   <a 
                     href="mailto:venugangula44@gmail.com" 
                     className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer"
                   >
@@ -86,7 +86,7 @@ const Footer = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-end">
-                <Button 
+                 <Button 
                   className="bg-primary-gradient hover:opacity-90 transition-opacity"
                   onClick={() => window.open('mailto:venugangula44@gmail.com', '_blank')}
                 >
@@ -94,7 +94,7 @@ const Footer = () => {
                   Send Message
                 </Button>
                 
-                <Button 
+                 <Button 
                   variant="outline" 
                   className="border-primary/20 hover:border-primary/40"
                   onClick={() => window.open('https://www.linkedin.com/in/venugopalreddygangula/', '_blank')}

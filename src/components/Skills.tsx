@@ -5,65 +5,75 @@ import { Code, Database, Cloud, BarChart, Shield, Settings } from "lucide-react"
 
 const skillCategories = [
   {
-    title: "Programming Skills",
+    title: "Languages & Analytics",
     icon: Code,
     skills: [
-      "Python (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, Tensorflow)",
+      "Python",
+      "SQL", 
+      "R",
+      "DAX",
+      "SAS",
       "PySpark",
-      "SQL (PostgreSQL)",
-      "R, VBA, SAS",
-      "AWS Lambda"
+      "Pandas",
+      "NumPy",
+      "Scikit-learn"
     ]
   },
   {
-    title: "Databases/Technologies",
+    title: "Data Engineering",
     icon: Database,
     skills: [
-      "Apache Spark",
-      "HDFS",
-      "Hive",
-      "Kafka",
-      "Github (Actions)",
-      "CI/CD",
-      "MongoDB",
+      "ETL/ELT Pipelines",
+      "Data Modeling",
+      "Data Warehousing",
+      "dbt",
       "Airflow",
-      "Hadoop"
+      "Kafka",
+      "Spark Structured Streaming"
     ]
   },
   {
-    title: "Cloud Platforms",
+    title: "Cloud & Warehousing",
     icon: Cloud,
     skills: [
-      "Snowflake",
-      "Redshift",
-      "Azure Data Factory",
-      "Databricks",
-      "ADLS Gen 2",
-      "Synapse",
-      "AWS S3",
-      "EMR, EC2",
-      "RDS",
-      "BigQuery"
+      "AWS (S3, Redshift, Glue, EMR, Lambda, RDS, Athena)",
+      "Azure (ADF, Synapse, ADLS, Databricks)",
+      "GCP (BigQuery, Dataflow, Pub/Sub)",
+      "Snowflake"
     ]
   },
   {
-    title: "Data Modeling & Warehousing",
-    icon: BarChart,
-    skills: [
-      "Star & Snowflake Schema",
-      "Dimensional Modeling",
-      "DBT",
-      "Medallion Architecture"
-    ]
-  },
-  {
-    title: "BI & Visualization",
+    title: "Visualization & Reporting",
     icon: BarChart,
     skills: [
       "Power BI",
-      "Tableau", 
+      "Tableau",
       "Looker",
       "Excel (Pivot Tables, Power Query)"
+    ]
+  },
+  {
+    title: "Database Systems",
+    icon: Database,
+    skills: [
+      "MySQL",
+      "PostgreSQL",
+      "Oracle",
+      "SQL Server",
+      "MongoDB",
+      "Cosmos DB"
+    ]
+  },
+  {
+    title: "Methodologies & Tools",
+    icon: Settings,
+    skills: [
+      "Agile/Scrum",
+      "CI/CD",
+      "Git/GitHub",
+      "DevOps",
+      "Infrastructure as Code",
+      "Data Governance"
     ]
   }
 ];
@@ -93,7 +103,7 @@ const Skills = () => {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
           {skillCategories.map((category, index) => (
             <Card key={index} className="border-0 shadow-card hover:shadow-card-hover transition-all duration-300 group">
               <CardHeader className="pb-4">

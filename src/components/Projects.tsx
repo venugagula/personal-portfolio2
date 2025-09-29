@@ -10,34 +10,40 @@ import powerbiDashboard from "@/assets/powerbi-dashboard.jpg";
 
 const projects = [
   {
-    title: "Real-Time Twitter Analysis Pipeline",
+    title: "Real-Time Twitter Sentiment Analysis",
     period: "Dec 2024",
     technologies: ["Kafka", "Spark Structured Streaming", "MongoDB", "Power BI"],
-    description: "Built a Kafka-Spark pipeline streaming 10K+ tweets/hour with 85% sentiment accuracy.",
+    description: "Developed streaming data pipeline processing 10K+ tweets/hour with NLP sentiment classification (TextBlob).",
     achievements: [
-      "Built a Kafka-Spark pipeline streaming 10K+ tweets/hour with 85% sentiment accuracy.",
-      "Performed sentiment classification using TextBlob, enabling near real-time public opinion tracking.",
-      "Stored processed data in MongoDB and built interactive Power BI dashboards to visualize sentiment by topic, hashtag and geography, supporting social media intelligence use cases."
+      "Developed streaming data pipeline processing 10K+ tweets/hour with NLP sentiment classification (TextBlob).",
+      "Stored processed data in MongoDB/Cosmos DB for scalable, fault-tolerant analytics.",
+      "Built Power BI dashboards visualizing sentiment by hashtags, topics, and geographies.",
+      "Implemented CI/CD pipeline with GitHub Actions reducing release time by 40%.",
+      "Created monitoring solutions for stream lag, fault tolerance, and error recovery. Authored system architecture diagrams and technical documentation."
     ],
-    impact: "85% sentiment accuracy",
-    metrics: ["10K+ tweets/hour processed", "85% sentiment accuracy", "Near real-time analytics"],
+    impact: "40% reduction in release time",
+    metrics: ["10K+ tweets/hour processed", "40% faster releases", "Real-time sentiment analysis"],
     link: "https://github.com/venugagula/Real-Time-Twitter-Analysis-Pipeline",
     githubLink: "https://github.com/venugagula/Real-Time-Twitter-Analysis-Pipeline",
     image: patientArchitecture,
     visualImage: powerbiDashboard
   },
   {
-    title: "ETL Pipeline for E-Commerce on Azure",
+    title: "E-Commerce ETL & Analytics Pipeline",
     period: "Nov 2022", 
     technologies: ["Azure Data Factory", "Databricks", "Delta Lake", "PySpark"],
-    description: "Processed 15GB+/day using Spark and ADF; cut runtime by 25% and spot upserts by 40%.",
+    description: "Built scalable ETL pipelines processing 15GB+/day with optimized PySpark transformations and upsert logic.",
     achievements: [
-      "Processed 15GB+/day using Spark and ADF; cut runtime by 25% and spot upserts by 40%.",
-      "Implemented medallion architecture in Azure Data Lake (Bronze→Silver→Gold) using Delta Lake for ACID compliance, enabling reliable near real-time analytics.",
-      "Processed 15GB+/day; reduced runtime by 25% via Spark optimizations and ADF-orchestrated ingestion. Improved upsert performance by 40% with custom Delta Lake merge logic."
+      "Built scalable ETL pipelines processing 15GB+/day with optimized PySpark transformations and upsert logic.",
+      "Applied Medallion Architecture with validation frameworks (Great Expectations) for reliability.",
+      "Designed Power BI dashboards and dimensional data models for actionable insights.",
+      "Implemented incremental loading and watermarking for performance optimization.",
+      "Applied Azure resource monitoring and auto-scaling policies, cutting spend by 20%.",
+      "Orchestrated workflows with Airflow DAGs for batch and streaming integration.",
+      "Authored deployment guides, workflow documentation, and runbooks."
     ],
-    impact: "25% reduction in processing time",
-    metrics: ["15GB+ daily data processed", "40% upsert performance improvement", "Near real-time analytics"],
+    impact: "20% cost reduction",
+    metrics: ["15GB+ daily data processed", "20% cost savings", "Medallion Architecture"],
     link: "https://github.com/venugagula/azure-ecommerce-etl-pipeline",
     githubLink: "https://github.com/venugagula/azure-ecommerce-etl-pipeline", 
     image: azureArchitecture,

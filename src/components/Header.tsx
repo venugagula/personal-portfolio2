@@ -17,14 +17,14 @@ const Header = () => {
         </h1>
         
         <div className="text-2xl lg:text-3xl mb-8 font-light">
-          Data Engineer | ETL Specialist | Real-Time Analytics Expert
+          Data Engineer / Data Analyst
         </div>
         
         <div className="max-w-3xl mx-auto text-lg mb-12 leading-relaxed opacity-90">
-          Data Engineer with 3+ years of experience delivering scalable, cloud-based data solutions. 
-          Specialized in ETL pipeline development, real-time data processing, and analytics automation 
-          across AWS, Azure, and Snowflake platforms. Proven ability to reduce processing latency, boost 
-          model accuracy, and build secure, insight-driven architectures.
+          Data Engineer / Data Analyst with 3+ years of progressive experience across healthcare, financial services, and 
+          e-commerce. Adept at building real-time data streaming systems, enterprise-grade ETL pipelines, and business 
+          intelligence solutions that transform raw data into actionable insights. Skilled in PySpark, SQL, Kafka, Snowflake, 
+          dbt, Airflow, and Power BI, with strong expertise across AWS, Azure, and GCP cloud ecosystems.
         </div>
 
         {/* Contact Info Cards */}

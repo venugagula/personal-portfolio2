@@ -6,39 +6,46 @@ import { Building, Calendar } from "lucide-react";
 const experiences = [
   {
     company: "Chicago Education Advocacy Cooperative (ChiEAC)",
-    role: "Data Engineer (via Data Science Alliance)",
+    role: "Cloud Data Engineer (via Data Science Alliance)",
     period: "Jul 2025 - Present",
     location: "Remote, USA",
     achievements: [
-      "Volunteering as a Data Engineer under the Data Science Alliance Fellowship to support ChiEAC's nonprofit mission.",
-      "Began documenting FHIR-compliant data architecture and assisting with AWS Glue pipeline audits.",
-      "Initiated collaboration on early-stage Power BI dashboards for tracking student performance."
+      "Designed FHIR-compliant data architecture for standardized nonprofit EHR ingestion and analytics on AWS.",
+      "Developed AWS Glue ETL jobs, Lambda triggers, and Athena queries to support secure healthcare reporting.",
+      "Built Power BI dashboards surfacing student performance and operational metrics, reducing manual reporting by 60%.",
+      "Automated incremental ingestion and workflow orchestration with Airflow, reducing runtime and manual effort.",
+      "Implemented data lineage, metadata management, and governance policies for HIPAA compliance.",
+      "Created monitoring solutions for ETL pipeline performance, cost control, and anomaly detection, Configured IAM roles, RBAC, and audit logging for sensitive data."
     ],
-    technologies: ["AWS Glue", "Power BI", "FHIR", "Data Architecture"]
+    technologies: ["AWS Glue", "Lambda", "Athena", "Power BI", "FHIR", "Airflow", "HIPAA"]
   },
   {
     company: "Tata Consultancy Services (TCS)",
     role: "Data Engineer",
-    period: "Jul 2021 - Jun 2023",
-    location: "Hyderabad, Telangana",
+    period: "Aug 2021 - Jun 2023",
+    location: "Hyderabad, India",
     achievements: [
-      "Engineered ultra-low latency market data pipelines processing 10M+ messages/sec using Python and Apache Kafka, reducing tick-to-trade latency by 75% for quantitative trading strategies.",
-      "Modeled Snowflake data warehouse with DBT and deployed 50+ Airflow DAGs, accelerating analytics by 90% and enabling near real-time risk reporting for $500M+ trading positions.",
-      "Built automated data validation framework using Great Expectations that reduced reconciliation errors by 40% across 20+ critical trading datasets."
+      "Built Kafka + Spark Structured Streaming pipelines processing 10M+ events/sec for real-time financial analytics.",
+      "Designed Snowflake warehouses and Redshift clusters, creating 50+ Airflow DAGs and dbt models.",
+      "Implemented data quality checks, reconciliation frameworks, and automated testing improving accuracy by 40%.",
+      "Enhanced performance of ETL/ELT pipelines, partitioning and clustering strategies, reducing query time by 30%.",
+      "Established CI/CD pipelines with GitHub Actions and Jenkins for automated data pipeline deployments.",
+      "Conducted root cause analysis and production support for pipeline failures, reducing downtime by 20%."
     ],
-    technologies: ["Python", "Apache Kafka", "Snowflake", "DBT", "Airflow", "Great Expectations"]
+    technologies: ["Kafka", "Spark", "Snowflake", "Redshift", "Airflow", "DBT", "GitHub Actions", "Jenkins"]
   },
   {
     company: "TeamTech Solutions",
-    role: "Data Engineer",
+    role: "Data Analyst",
     period: "May 2020 - Jun 2021",
-    location: "Hyderabad, Telangana",
+    location: "Hyderabad, India",
     achievements: [
-      "Automated 1TB+ financial data processing using Azure Data Factory and Databricks; developed PySpark fraud detection model with 82% accuracy and integrated real-time dashboards in Power BI.",
-      "Built ELT pipelines in Snowflake for daily-refreshed investor dashboards, saving 15+ hours/week; implemented data governance standards and unified data dictionary to streamline collaboration and accelerate due diligence by 30%.",
-      "Implemented Snowflake ELT pipelines and validation frameworks to maintain 99.9% data reliability, reducing pipeline failures by 40% with custom Delta Lake merge logic improving upsert performance by 40%."
+      "Automated ingestion of 1TB+ daily financial data using Azure Data Factory, Databricks, and Delta Lake, reducing runtimes by 25% and ensuring ACID-compliant analytics with the Medallion Architecture (Bronze→Silver→Gold).",
+      "Built fraud detection model in PySpark (82% accuracy) and integrated them with Power BI for real-time monitoring, delivering actionable insights and high-volume financial transactions.",
+      "Developed Snowflake ELT workflows and dimensional models (star schema, fact and dimension tables) to support financial reporting, trend analysis, and executive KPI dashboards.",
+      "Partnered with stakeholders through UAT sessions, requirements gathering, and workshops, while authoring data dictionaries, ETL documentation, and reporting standards to ensure alignment and maintainability."
     ],
-    technologies: ["Azure Data Factory", "Databricks", "PySpark", "Power BI", "Snowflake", "Delta Lake"]
+    technologies: ["Azure Data Factory", "Databricks", "Delta Lake", "PySpark", "Power BI", "Snowflake"]
   }
 ];
 
